@@ -7,14 +7,50 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="menu-toggle">
+        <a href="#" class="burger not-in-desktop">
+          <svg
+            height="32"
+            id="close"
+            viewBox="0 0 32 32"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#ffffff"
+              d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z"
+            />
+          </svg>
+          <svg
+            height="48"
+            id="burger"
+            version="1.1"
+            viewBox="0 0 12.7 12.7"
+            width="48"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <g id="layer1" transform="translate(0,-284.29998)">
+              <path
+                fill="#ffffff"
+                d="m 2.8222223,287.1222 v 1.41111 h 7.0555558 v -1.41111 z m 0,2.82222 v 1.41112 h 7.0555558 v -1.41112 z m 0,2.82223 v 1.41111 h 7.0555558 v -1.41111 z"
+                id="rect4487"
+                style="opacity:1;vector-effect:none;fill-opacity:1;stroke:none;stroke-width:0.07055555;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+              />
+            </g>
+          </svg>
+        </a>
+
         <ul>
-          <li>Le coté lumineux</li>
-          <li>Le coté onbscur</li>
-          <li>L'empire</li>
-          <li>Les droides</li>
-          <li>Les ewoks</li>
-          <li>Jabba le hutt</li>
+          <li><a href="#">Le coté lumineux</a></li>
+          <li><a href="#">Le coté obscur</a></li>
+          <li><a href="#">L'empire</a></li>
+          <li><a href="#">Les droides</a></li>
+          <li><a href="#">Les ewoks</a></li>
+          <li><a href="#">Jabba le hutt</a></li>
         </ul>
       </nav>
     </header>
@@ -26,22 +62,127 @@
 
       <section>
         <div class="cards">
-          <article class="parallax1">
+          <article class="parallax-container">
+            <div class="parallax1"></div>
             <div class="black-bg"></div>
             <div class="parallax2"></div>
           </article>
 
-          <article class="text"></article>
-          <article class="kiloren">
+          <article class="flexbox-container centered ">
+            <div class="container-2-cols text-centered">
+              <h1>Star wars lorem ipsum</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?
+              </p>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teac and pain can procure him some great pleasure. To take a
+                trivial example, which of us ever undertakes laborious physical
+                exercise, except to obtain some advantage from it? But who has
+                any right to find fault with a man who chooses to enjoy a
+                pleasure that has no annoying consequences, or one who avoids a
+                pain that produces no resultant pleasure?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventt voluptatem. Ut enim ad minima veniam, quis
+                nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?
+              </p>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer of the truth, the master-builder
+                of human happiness. No one rejects, dislikes, or avoids pleasure
+                ?
+              </p>
+            </div>
+            <div class="container-2-cols not-in-mobile">
+              <img
+                class="medium-image"
+                alt="battlefront"
+                src="https://cdn.cdkeys.com/500x706/media/catalog/product/s/t/starwars2.jpg"
+              />
+            </div>
+          </article>
+          <article class="full-image">
             <img
               alt="kiloren"
               src="http://pausegeek.fr/img/news/film/star-wars-7-kylo-ren.jpg"
             />
             <p></p>
           </article>
-          <article class="image-text">
-            <quote>A long time ago, ina galaxy far, far away..</quote>
-            <img alt="robots" src="assets/r2d2_c3p0-2x.jpg" />
+          <article class="image-text centered">
+            <q>A long time ago, ina galaxy far, far away..</q>
+            <img
+              class="small-image"
+              alt="robots"
+              src="https://www.komar.de/fr/media/catalog/product/cache/6/image/9df78eab33525d08d6e5fb8d27136e95/4/-/4-447_star_wars_three_droids_ma.jpg"
+            />
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system, and expound the actual teachings of the
+              great explorer of the truth, the master-builder of human
+              happiness. No one rejects, dislikes, or avoids pleasure itself,
+              because it is pleasure, but because those who do not know how to
+              pursue pleasure rationally encounter consequences that are
+              extremely painful. Nor again is there anyone who loves or pursues
+              or desires to obtain pain of itself, because it is pain, but
+              because occasionally circumstances occur in which toil and pain
+              can procure him some great pleasure. To take a trivial example,
+              which of us ever undertakes laborious physical exercise, except to
+              obtain some advantage from it? But who has any right to find fault
+              with a man who chooses to enjoy a pleasure that has no annoying
+              consequences, or one who avoids a pain that produces no resultant
+              pleasure?
+            </p>
+          </article>
+          <article class="full-image">
+            <img
+              alt="while-soldiers"
+              src="https://www.homewallmurals.co.uk/ekmps/shops/allwallpapers/images/star-wars-storm-troopers-wall-mural-6596-p.jpg"
+            />
+            <p></p>
           </article>
         </div>
       </section>
@@ -50,11 +191,79 @@
     </main>
 
     <!-- footer -->
-
     <footer>
-      <address>
-        2018 (v.2.0)
-      </address>
+      <p><strong>TM LucasFilm </strong>Ltd Amm Rights Reserved</p>
+
+      <div class="flexbox-container">
+        <div class="container-3-cols">
+          <a href="#">Term of use</a>
+          <a href="#">Legal Notices</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="container-3-cols">
+          <a href="#">Your California Privacy Rights</a>
+          <a href="#">Star Wars at Disney Store</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="container-3-cols">
+          <p>Follow Star Wars</p>
+          <div class="flexbox-container social-media">
+            <svg
+              enable-background="new 0 0 56.693 56.693"
+              height="35px"
+              version="1.1"
+              viewBox="0 0 56.693 56.693"
+              width="35px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                fill="#f4f4f4"
+                d="M43.414,4.831H13c-5.283,0-9.581,4.297-9.581,9.58v10.12v20.295c0,5.283,4.298,9.58,9.581,9.58h30.415  c5.283,0,9.58-4.297,9.58-9.58V24.53v-10.12C52.994,9.127,48.697,4.831,43.414,4.831z M46.162,10.544l1.096-0.004v1.091v7.312  l-8.375,0.027l-0.029-8.402L46.162,10.544z M21.131,24.53c1.588-2.197,4.164-3.638,7.076-3.638s5.488,1.441,7.074,3.638  c1.033,1.434,1.652,3.188,1.652,5.088c0,4.811-3.918,8.725-8.727,8.725c-4.812,0-8.726-3.914-8.726-8.725  C19.481,27.718,20.098,25.964,21.131,24.53z M48.164,44.825c0,2.621-2.131,4.75-4.75,4.75H13c-2.62,0-4.751-2.129-4.751-4.75V24.53  h7.4c-0.639,1.572-0.998,3.289-0.998,5.088c0,7.473,6.08,13.557,13.556,13.557c7.475,0,13.555-6.084,13.555-13.557  c0-1.799-0.361-3.516-1-5.088h7.402V44.825z"
+              />
+            </svg>
+            <svg
+              style="enable-background:new 0 0 90 90;"
+              height="35px"
+              version="1.1"
+              viewBox="0 0 90 90"
+              width="35px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <g>
+                  <path
+                    fill="#f4f4f4"
+                    d="M90,15c0-7.9-7.1-15-15-15H15C7.1,0,0,7.1,0,15v60c0,7.9,7.1,15,15,15h30V56H34V41h11v-5.8     C45,25.1,52.6,16,61.9,16H74v15H61.9c-1.3,0-2.9,1.6-2.9,4v6h15v15H59v34h16c7.9,0,15-7.1,15-15V15z"
+                    id="Facebook__x28_alt_x29_"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            <svg
+              enable-background="new 0 0 56.693 56.693"
+              height="35px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 56.693 56.693"
+              width="35px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                fill="#f4f4f4"
+                d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="black-bg"></div>
     </footer>
     <script src="src/index.js"></script>
   </body>

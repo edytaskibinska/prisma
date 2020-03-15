@@ -1,8 +1,43 @@
-.kiloren {
-  min-height: 400px;
-  img {
-    width: 1200px;
-    margin-left: -50%;
-    margin-right: -50%;
+@import "../variables-and-mixins/";
+.centered {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.text-centered {
+  text-align: center;
+}
+.image-text {
+  overflow: hidden;
+  padding: 20px;
+  q {
+    text-align: center;
   }
+  .small-image {
+    margin-right: 20px;
+    float: left;
+  }
+}
+.medium-image {
+  max-width: 100%;
+}
+.small-image {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.full-image {
+  max-height: 600px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+.black-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include background-black;
 }

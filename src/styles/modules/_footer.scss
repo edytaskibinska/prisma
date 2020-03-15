@@ -1,0 +1,32 @@
+@import "../variables-and-mixins/";
+
+footer {
+  background-image: url("https://i.pinimg.com/originals/2b/dc/49/2bdc499e8f31a1f827101f12c3638113.png");
+  position: relative;
+  background-position: center center;
+  min-height: 100px;
+  color: $white;
+  overflow: hidden;
+  text-align: center;
+  p {
+    position: relative;
+    z-index: 3;
+  }
+  a {
+    margin: 5px;
+    color: $white;
+    display: block;
+  }
+  .container-3-cols {
+    z-index: 3;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  .social-media {
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+  }
+}

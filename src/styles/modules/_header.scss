@@ -4,16 +4,40 @@ header {
   position: fixed;
   height: 50px;
   z-index: 999;
-
+  width: 100%;
+  text-align: center;
   nav {
     @include background-black;
-    height: 50px;
+    min-height: 50px;
   }
+
   ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   li {
+    font-weight: 600;
+    padding: 20px;
     list-style: none;
-    color: white;
+    text-transform: uppercase;
+    color: $white;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .close {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .burger {
+    position: absolute;
+    left: 10px;
+    top: 10px;
   }
 }

@@ -1,4 +1,128 @@
+@import "../variables-and-mixins/variables";
+@import "../variables-and-mixins/mixins";
+@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap");
+
+body {
+  color: $black;
+  font-family: sans-serif;
+  font-family: "Hind Siliguri", Arial, sans-serif;
+  position: relative;
+}
+p,
+q,
+h1 {
+  margin: 20px 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+q {
+  display: block;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
 article {
   min-height: 200px;
-  border: 1px solid red;
+}
+
+.not-in-mobile {
+  display: block;
+}
+.not-in-desktop {
+  display: none;
+}
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+}
+.container-2-cols,
+.container-3-cols {
+  @include box-sized;
+}
+.container-2-cols {
+  width: 50%;
+}
+.container-3-cols {
+  width: 33%;
+}
+@media all and (max-width: 420px) {
+  .image-text {
+    .small-image {
+      max-width: 400px;
+    }
+    img.small-image,
+    p {
+      float: none;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  article {
+    overflow: hidden;
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 65px;
+    #burger {
+      display: block;
+    }
+    #close {
+      display: none;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    ul {
+      position: relative;
+      top: 50px;
+      flex-direction: column;
+      display: none;
+    }
+    li {
+      max-width: 100%;
+    }
+    &.open {
+      bottom: 0;
+      #burger {
+        display: none;
+      }
+      #close {
+        display: block;
+      }
+      ul {
+        display: block;
+      }
+    }
+  }
+  .not-in-mobile {
+    display: none;
+  }
+  .not-in-desktop {
+    display: block;
+  }
+  .centered {
+    width: auto;
+  }
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-2-cols,
+  .container-3-cols {
+    width: 100%;
+  }
+  .full-image {
+    max-height: 400px;
+    img {
+      width: 1200px;
+      margin-left: -50%;
+      margin-right: -50%;
+    }
+  }
 }

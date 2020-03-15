@@ -1,22 +1,3 @@
-$body-color: slateblue;
 @import "resets";
 @import "modules";
-
-body {
-  color: $body-color;
-  font-family: sans-serif;
-}
-
-.normal {
-  min-height: 1200px;
-}
-
-.component {
-  display: block;
-  padding: 1.3em;
-  box-shadow: 1px 1px 4px lightgray;
-}
-
-.clicked {
-  background-color: papayawhip;
-}
+@import "./variables-and-mixins/variables";
