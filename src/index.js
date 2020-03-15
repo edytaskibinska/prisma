@@ -12,8 +12,8 @@ window.addEventListener("scroll", function() {
   paralaxingLogo.parallax(0.4, window.scrollY);
 });
 
-let menu = document.querySelector(".menu-toggle");
-let menuToggle = document.querySelector(".burger");
+const menu = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".burger");
 
 menuToggle.onclick = function(e) {
   e.preventDefault();
