@@ -12,6 +12,7 @@ p,
 q,
 h1 {
   margin: 20px 0;
+  line-height: normal;
 }
 
 h1 {
@@ -22,6 +23,12 @@ q {
   display: block;
   font-weight: 600;
   font-size: 2.5rem;
+}
+.italic-text {
+  font-style: italic;
+}
+strong {
+  font-weight: 600;
 }
 article {
   min-height: 200px;
@@ -119,10 +126,13 @@ article {
   }
   .full-image {
     max-height: 400px;
+    text-align: center;
+    overflow: hidden;
     img {
       width: 1200px;
-      margin-left: -50%;
-      margin-right: -50%;
+      position: relative;
+      left: 100%;
+      margin-left: -200%;
     }
   }
 }
