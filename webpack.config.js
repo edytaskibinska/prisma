@@ -24,9 +24,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"],
-        loader: "file",
-        include: "./src/assets"
+        use: ["file-loader"]
       },
       {
         test: /\.scss$/,

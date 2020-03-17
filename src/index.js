@@ -1,4 +1,4 @@
-import DynamicParallax from "./parallax";
+import DynamicParallax from "./js/parallax";
 import "./styles/main.scss";
 
 const paralaxing = new DynamicParallax(".parallax1");
